@@ -1,0 +1,20 @@
+####################################
+# Project Title:	Trifolium Neighborhood Experiment 2015 
+# Project Owner:	Friesen, Strauss
+# Date Conceived: 	
+# Date Work Began:	2015
+# Last Updated:		2017-09-28
+####################################
+
+Subfolders for every project are:
+bin : binaries (external code)
+data : DATA!
+doc : documentation
+results: RESULTS!
+src : source code (scripts, etc.)
+
+Within these folders, subfolders are arranged by date. 
+!! In this README, keep a current version of the folder tree with explanation if needed
+
+####################################
+
