@@ -1,0 +1,9 @@
+#Running Muscle on the HPCC
+
+module load Muscle/3.8.31
+
+muscle -in myfile.fa -out myalignedfile.afa
+
+#the ".afa" stands for "aligned fasta", which I think is more elegant than adding words to the title
+
+
