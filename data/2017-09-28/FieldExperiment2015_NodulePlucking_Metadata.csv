@@ -1,0 +1,19 @@
+Spreadsheet Information,
+Grant,Trifolium Dimensions
+Collection Year,2015
+Project,Field Experiment 2015
+Project Code,AM
+Description,"Roots from 2015 were dried. Now, we are rehydrating those roots and plucking nodules for DNA extractions. This spreadsheet is to track plant and nodule relationship"
+,
+,
+,
+,
+,
+Spreadsheet MetaData,
+Plate,There are 4 plates total
+Well.ID,the well that the nodule is in
+Plant.ID,The Friesen Lab root identification
+Species,the root species
+Plucked.By,Initials of who plucked the nodule
+Nodule.ID,The Friesen nodule Identification
+Note,notes on nodules/roots
