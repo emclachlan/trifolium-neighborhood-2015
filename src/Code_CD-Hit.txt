@@ -1,0 +1,33 @@
+# Running ch-hit on mac
+
+# install cd-hit from github
+https://github.com/weizhongli/cdhit/wiki/3.-User's-Guide#CDHIT
+
+# make without omp!
+make openmp=no
+
+# try running!
+./cd-hit 
+
+cd-hit -i db -o db90 -c 0.9 -n 5 -M 16000 –d 0 -T 8
+  where
+  db is the filename of input,
+  db90 is output, 
+  -c 1.0, means 100% identity, is the clustering threshold
+  -c 0.9, means 90% identity, is the clustering threshold
+  -n 5 is the word size
+  -d 0 use sequence name in fasta header till the first white space
+  -M 16000, to use 16GB RAM
+  -T 8, to use 8 threads
+
+./cd-hit -i ../../results/2017-12-04/trinbhd-nodC-mf.txt -o ../../results/2017-12-04/test-out -c 1.0 -n 5 -d 0 -M 16000 -T 8
+
+# everything rejected except for the magical sequence...
+# it has no gaps! try deleting them!
+
+./cd-hit -i ../../results/2017-12-04/test.fa -o ../../results/2017-12-04/test-out -c 1.0 -n 5 -d 0 -M 16000
+
+./cd-hit -i ../../results/2017-12-04/trinbhd-nodC-mf.fa -o ../../results/2017-12-04/trinbhd-nodC-mf-out -c 1.0 -n 5 -d 0 -M 16000 > ../../results/2017-12-04/trinbhd-nodC-mf.log
+
+# 10 clusters!!! yay :D
+
