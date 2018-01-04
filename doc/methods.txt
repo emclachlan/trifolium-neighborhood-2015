@@ -1,0 +1,47 @@
+Experiment: Plants were arrayed in a 6 x 6 grid with 4 focal plants of a single species (barbigerum, bifidum, macraei, and microdon). The frequency of the focal species ranged from 4 to 36 (11-100%) of the total community. Each community was inoculated with a mix of pure rhizobia strains isolated from field-collected nodules of either the focal species (F1, F2) or the congener competitors (C1, C2). Two different mixtures were used for each inoculum type. 
+
+Nodule sampling: Since the strain mixes differed for every species, we can really only test whether within a given species by inoculum combination the identities of the nodulating strains varied in response to competition. Furthermore, the plants within a single pot are statistically confounded. Therefore, for each inoculum (F1, F2, C1, C2) we randomly sampled 6 nodules from each of the a single focal plant within the low-frequency (4/36 plants) and high-frequency (36/36 plants). If a plant has fewer than 6 nods, record, skip it and take the next random plant in the set of four (in R, “sample(1:4,1)” will return a random number between 1 and 4).
+Sample size: 4 spp x 2 competition x 4 inoc x 6 nods = 192 total. 
+NOTE: If there are many (12+) nodules per plant, let’s pluck, size, and crush 12 nods each (6 in one plate and 6 in another) but just extract & sequence 6 each to start with. So we’ll have 4 x optical plates for nods.
+
+Nodule sequencing: Dried roots were rehydrated in milliQ water overnight at 4C, then plucked into 96 well optical plates, scanned at 2400 dpi with a black velvet (?) background [EM→ test this] to obtain nodule size, and crushed with a flame-sterilized multicrusher. Total genomic DNA was extracted from the nodule extract (Zymo quick-gDNA) and used as template for a rhizobia-specific gene nodC (primers XX). Amplicons were bead purified to remove primer dimer and Sanger sequenced using (the reverse one, right?)
+
+===
+
+
+
+
+1. Harvest single nodules into 1.1mL 8-strip tubes*. Freeze at -80C with firmly sealed lids. 
+* The layout of nodules to plate, and well within plate will need to be carefully tracked.
+2. Add a single ball bearing and 100ul 0.5X PBS (I use blue food coloring to track any leakage).
+3. Crush in tissue lyzer at 30Hz for 4 mins.
+* Make sure you balance the tissue lyzer appropriately with blanks when doing small numbers of samples. *
+4. Spin in 96well plate centrifuge max for 10min (could probably up this to get even cleaner).
+5. Transfer 80ul supernatant into 320 ul zymo Quick gDNA genomic lysis buffer. Incubate 10 min at room temperature. [Zymo D3007 is uncapped individual tubes; 
+6. Transfer to column. 1min at 10,000g.
+7. 200ul pre-wash buffer.  1min at 10,000g.
+8. 500ul wash buffer.  1min at 10,000g.
+9. 100ul elution buffer. Incubate 10 min at room temperature and then spin for 30s at max speed.
+10. 5ul as template in standard PCR.
+
+Zymo protocol:
+Step 1	
+Add 200 µl of Genomic Lysis Buffer to 50 µl of blood, serum, or plasma (4:1).  Mix completely by vortexing 4-6 seconds, then let stand 5-10 minutes at room temperature.
+
+Note:  Add 200 µl Genomic Lysis Buffer to all samples < 50 µl.  For samples larger than 50 µl, add a proportional amount (4:1) of Genomic Lysis Buffer (e.g., Add 400 µl Genomic Lysis Buffer to 100 µl blood).    
+
+Step 2	
+Transfer the mixtures to the wells of a Silicon-A™ Plate on a Collection Plate.  Centrifuge at ≥ 2,500 x g (5,000 x g max.) for 5 minutes.
+
+Step 3	
+Add 200 µl DNA Pre-Wash Buffer to each well and centrifuge at ≥ 2,500 x g for 5 minutes.  Discard the flow through.
+
+Step 4	
+Add 300 µl of g-DNA Wash Buffer to each well and centrifuge at ≥ 2,500 x g for 5 minutes.
+
+Step 5	
+Transfer the Silicon-A™ Plate onto an Elution Plate. Add ≥30 µl DNA Elution Buffer or water to each well.  Incubate 2-5 minutes at room temperature, then centrifuge at ≥ 2,500 x g for 5 minutes to elute the DNA. The eluted DNA can be used immediately for molecular based applications or stored ≤-20ºC for future use. 
+
+
+Data analysis: Sanger reads were quality trimmed and aligned to identify SNPs. The frequency of each strain was calculated per plant and the per-plant communities compared using adonis. 
+We also compared the reads to the nodC sequence from the strains used in the inoculum.

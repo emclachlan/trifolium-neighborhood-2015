@@ -1,0 +1,51 @@
+NEED TO ADD WHAT HAPPENED UP TO HERE, WITH APPROPRIATE FILE REFS
+
+* EM: first batch of nods
+-- meta-data
+-- nod size
+-- the few that we got sequence from (where is this data?)
+-- PCR attempts (briefly, with refs to lab notebooks etc.)
+* MF/EM: second batch of nods
+-- meta-data
+-- no nodule size for these
+-- what happened with the sequencing (can't interpret the different files)
+* EM: ab1 & fasta file renaming protocol
+* EM: trimming program details (version, citation) & parameters
+
+
+2017-11-29 EM
+> trimmed fasta file in UGENE: trinbhd-c-a-t.fa
+-- which fasta file? please log command line in a src document (plain old .txt)
+> ran file on CD-HIT-EST
+-- website? if so, give link and date used along w any version info
+
+2017-12-04 MF
+> installed cdhit on my mac & got it to run! hooray!
+> see src/Code_CD-Hit.txt
+> key is to feed it a file that doesn't have gaps, so need to delete these from the input file
+
+2018-01-03 MF
+> wrangle the meta-data and doc for this project
+> goal is to ship this to strauss lab for response to reviewers on Siefert et al. Am Nat paper within the week
+> left some notes at the beginning of this LOG for EM to go back & fill in
+> looks like the meta-data are in the fasta seq names? yay! thanks Emily :D
+> need to make sure all the nods are in here... also need to find the nodC seqs for the original strains (!). let's start reasonable and assume Emily's file has all of the nods 
+[EM] check that all nods are in the fasta file
+> table linking plantID & nodID is this one: FieldExperiment2015_NodulePlucking_Data.csv
+-- except that this has our unique IDs, NOT the descriptive IDs that are in the fasta file! also, this file is actually for the field experiment not the nbhd experiment??
+[EM&MF] Review this project & the field nodule project and sort out the files
+> so, I don't actually need the plucking spreadsheet for this analysis, although I certainly want it!
+[EM] find / type up the nodule spreadsheet (MF had this as a hardcopy)
+
+
+2018-01-04 MF
+> what are these files? they look like the 2016 sanger reads, but where are the ab1 files?
+-- tri.nbhd.combo.fa-- tri.nbhd.original.strain.fasta.fa
+> need to start a master folder of all raw data!!
+> moving these to the data folder: data/first trimmed sanger reads
+[EM] move the raw ab1 files and trimming protocols etc to this filestructure
+> original strains for the mixes are here:
+https://docs.google.com/spreadsheets/d/1eFSwcSoipK7YwMIuvTb_hzsBQRKo34Z2X77BpoW6egQ/edit#gid=1996726975
+[EM] where is the rest of the nodule size data for 2015 Jan harvest? only partly filled out here: https://docs.google.com/spreadsheets/d/1FHI7KGKdUGk0CCWiiG3cUiPmtjVDQ6NROCstyrx31YY/edit#gid=1101537977
+> where are the nodC sequences for these strains???
+[EM] nodC for 2015?

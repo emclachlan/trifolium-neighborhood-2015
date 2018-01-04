@@ -6,6 +6,25 @@
 # Last Updated:		2017-09-28
 ####################################
 
+Goal: To test whether competitive environment alters nodulation patterns by rhizobia.
+
+Hypotheses: 
+1 - Nodules are larger when competition is more intense. (In this experiment, this is basically when there are more macraei in the community)
+2 - Strain diversity is lower in monoculture (if something about root exudate diversity of neighborhood increases diversity of nodulating strains)
+3 - Strain composition differs when plants at low vs high density (the preferred strain is influenced by the competitive neighborhood). 
+
+Datasheets:
+Experimental design: https://docs.google.com/spreadsheets/d/1gAuGiq03luv1vuS-ep9qvwJkniuUoJY7ZLdENZixVGE/edit#gid=0
+Rhizobial inoculum mixes: https://docs.google.com/spreadsheets/d/1eFSwcSoipK7YwMIuvTb_hzsBQRKo34Z2X77BpoW6egQ/edit#gid=1031709642
+
+Raw data:
+>>Emily, where are the raw sanger trace files? We should keep a copy of these with the fasta
+Trimmed & aligned data: 
+SNP table:
+R code:
+
+===
+
 Subfolders for every project are:
 bin : binaries (external code)
 data : DATA!
