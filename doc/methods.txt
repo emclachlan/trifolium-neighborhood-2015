@@ -5,11 +5,9 @@ Sample size: 4 spp x 2 competition x 4 inoc x 6 nods = 192 total.
 NOTE: If there are many (12+) nodules per plant, let’s pluck, size, and crush 12 nods each (6 in one plate and 6 in another) but just extract & sequence 6 each to start with. So we’ll have 4 x optical plates for nods.
 
 Nodule sequencing: Dried roots were rehydrated in milliQ water overnight at 4C, then plucked into 96 well optical plates, scanned at 2400 dpi with a black velvet (?) background [EM→ test this] to obtain nodule size, and crushed with a flame-sterilized multicrusher. Total genomic DNA was extracted from the nodule extract (Zymo quick-gDNA) and used as template for a rhizobia-specific gene nodC (primers XX). Amplicons were bead purified to remove primer dimer and Sanger sequenced using (the reverse one, right?)
+[] EM add PCR methods
 
 ===
-
-
-
 
 1. Harvest single nodules into 1.1mL 8-strip tubes*. Freeze at -80C with firmly sealed lids. 
 * The layout of nodules to plate, and well within plate will need to be carefully tracked.
@@ -43,5 +41,9 @@ Step 5
 Transfer the Silicon-A™ Plate onto an Elution Plate. Add ≥30 µl DNA Elution Buffer or water to each well.  Incubate 2-5 minutes at room temperature, then centrifuge at ≥ 2,500 x g for 5 minutes to elute the DNA. The eluted DNA can be used immediately for molecular based applications or stored ≤-20ºC for future use. 
 
 
-Data analysis: Sanger reads were quality trimmed and aligned to identify SNPs. The frequency of each strain was calculated per plant and the per-plant communities compared using adonis. 
+Data analysis: 
+Sanger reads were quality trimmed and aligned to identify SNPs. 
+[] EM/MF need more info here... figure out command-line way of doing this.
+
+The frequency of each strain was calculated per plant and the per-plant communities compared using adonis. 
 We also compared the reads to the nodC sequence from the strains used in the inoculum.

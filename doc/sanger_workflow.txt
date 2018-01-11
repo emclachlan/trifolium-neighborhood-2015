@@ -1,0 +1,24 @@
+Sanger Data Workflow
+
+Log all actions in LOG.txt with date and your initials
+
+1) raw ab1 files in rawdata folder; include metadata table [tab-delim] that links filename to newname (date + well + sampleID + locus)
+
+2) make rename script that looks like this:
+cp data/rawdata/date/oldfile.ab1 data/renamed/date/newfile.ab1
+and put the script into src
+
+3) *** trim files to fa files *** 
+[] Q: is Ugene the best, most reproducible way of doing this?? we are going to want to include some kind of reference so that we know where in the nodC locus our resulting region is...
+-- put this script in src as well
+-- the resulting fa should go in results, but maybe also in data
+
+4) align the fa files
+
+5) trim the alignment
+
+6) run cdhit on the trimmed alignment (prob need to strip any sites with gaps)
+
+7) make a sample to OTU table that lives in results, maybe also in data
+
+8) more fun analysis in R! Some analyses use OTU, some use aligned fasta

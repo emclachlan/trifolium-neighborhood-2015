@@ -46,6 +46,18 @@ NEED TO ADD WHAT HAPPENED UP TO HERE, WITH APPROPRIATE FILE REFS
 [EM] move the raw ab1 files and trimming protocols etc to this filestructure
 > original strains for the mixes are here:
 https://docs.google.com/spreadsheets/d/1eFSwcSoipK7YwMIuvTb_hzsBQRKo34Z2X77BpoW6egQ/edit#gid=1996726975
-[EM] where is the rest of the nodule size data for 2015 Jan harvest? only partly filled out here: https://docs.google.com/spreadsheets/d/1FHI7KGKdUGk0CCWiiG3cUiPmtjVDQ6NROCstyrx31YY/edit#gid=1101537977
+[EM] where is the rest of the nodule size data for 2015 Jan harvest? only partly filled out here: 
+https://docs.google.com/spreadsheets/d/1FHI7KGKdUGk0CCWiiG3cUiPmtjVDQ6NROCstyrx31YY/edit#gid=1101537977
 > where are the nodC sequences for these strains???
 [EM] nodC for 2015?
+
+2018-01-11 MF
+> EM dug up the 2015 strain nodC data, yay!! it is currently on google drive here:
+https://drive.google.com/drive/folders/1KFBy05iLF9kB8jRG46L51tQHtxrqPW4f
+--These are not the right ones :( These are more neighborhood expt sequences.
+> Maybe we just need to redo the Sanger on the original strains??
+> Look at the nodC by plant / trtment anyways...
+
+
+
+
