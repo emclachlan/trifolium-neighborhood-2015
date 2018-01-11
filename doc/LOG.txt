@@ -57,7 +57,10 @@ https://drive.google.com/drive/folders/1KFBy05iLF9kB8jRG46L51tQHtxrqPW4f
 --These are not the right ones :( These are more neighborhood expt sequences.
 > Maybe we just need to redo the Sanger on the original strains??
 > Look at the nodC by plant / trtment anyways...
-
+> compiled all fasta into 1 file, in results/today
+> including Rleg3841
+> Ugene -- ours have big gaps relative to 3841!!??
+> how to trim alignment?? also, need to filter reads by length first... out of time, continue later w EM
 
 
 
