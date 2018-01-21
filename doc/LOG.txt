@@ -1,10 +1,16 @@
+=== trifolium-neighborhood-2015 log ===
+Google Drive Folder: https://drive.google.com/drive/u/0/folders/0B4WoYvLnwmR1d3BMYW56LTRBTzg
+
 NEED TO ADD WHAT HAPPENED UP TO HERE, WITH APPROPRIATE FILE REFS
+
+* strain isolation (by Maren in 2015!)
 
 * EM: first batch of nods
 -- meta-data
 -- nod size
 -- the few that we got sequence from (where is this data?)
 -- PCR attempts (briefly, with refs to lab notebooks etc.)
+
 * MF/EM: second batch of nods
 -- meta-data
 -- no nodule size for these
@@ -69,4 +75,108 @@ https://drive.google.com/drive/folders/1KFBy05iLF9kB8jRG46L51tQHtxrqPW4f
 > let's group the inoc strains with the treatments and compare seqs
 > first, let's pull out just the strains used for inocula and see how many distinct ones we have!
 
+2018-01-16 MF
+> got sed to rename! see src/rename_original_strains_nodC.txt, which uses a *.sed script {fancy}
+> manually deleted strains not used in inoc, resulting in file: tri.nbhd.strains.renamed.inoc.fa
+> now look in Ugene at these
+> manually trimmed overhanging bases, aligned with muscle, made quick tree and looked at phylogram
+> only 6 unique haplotypes, two of which are unique! track these:
+ (1) Tri.Nbhd.Original_C03_27_19H03A-RT27_AF3101T_mdon_mdon-b_NodC
+ (2) Tri.Nbhd.Original_G03_35_01C04A-RT35_AF3012T_mac_mac-d_NodC
+[EM] question -- why are there gaps in some of your alignments? are these real? or is the sanger sequence poor quality?
+> aligning with clustalW in Ugene with gap penalty turned ON --> NO GAPS :D
 
+2018-01-17 MF
+> UGene made a circular tree, RT27_AF3101Tmdon group is very distinct :)
+> check which inocula have these, then take JUST THESE and combine with the nodule genotypes and compare...
+bif	comp 2	mac D	1
+mac	focal 2	mac D	1
+barb	comp 1	mdon B	1
+mdon	focal 1	mdon B	1
+> these correspond to plant IDs:
+barb	comp 1 community:	
+73	3A1	3	com	barb	4	C1	A	1	0	mdn
+74	3A2	3	com	barb	4	C1	A	2	0	mac
+75	3A3	3	com	barb	4	C1	A	3	0	mdn
+76	3A4	3	com	barb	4	C1	A	4	0	mac
+77	3A5	3	com	barb	4	C1	A	5	0	bif
+78	3A6	3	com	barb	4	C1	A	6	0	mac
+79	3B1	3	com	barb	4	C1	B	1	0	mdn
+80	3B2	3	com	barb	4	C1	B	2	1	barb
+81	3B3	3	com	barb	4	C1	B	3	0	mac
+82	3B4	3	com	barb	4	C1	B	4	0	mdn
+83	3B5	3	com	barb	4	C1	B	5	1	barb
+84	3B6	3	com	barb	4	C1	B	6	0	bif
+85	3C1	3	com	barb	4	C1	C	1	0	mac
+86	3C2	3	com	barb	4	C1	C	2	0	mac
+87	3C3	3	com	barb	4	C1	C	3	0	mdn
+88	3C4	3	com	barb	4	C1	C	4	0	bif
+89	3C5	3	com	barb	4	C1	C	5	0	bif
+90	3C6	3	com	barb	4	C1	C	6	0	bif
+91	3D1	3	com	barb	4	C1	D	1	0	bif
+92	3D2	3	com	barb	4	C1	D	2	0	mdn
+93	3D3	3	com	barb	4	C1	D	3	0	mdn
+94	3D4	3	com	barb	4	C1	D	4	0	mdn
+95	3D5	3	com	barb	4	C1	D	5	0	bif
+96	3D6	3	com	barb	4	C1	D	6	0	bif
+97	3E1	3	com	barb	4	C1	E	1	0	mac
+98	3E2	3	com	barb	4	C1	E	2	1	barb
+99	3E3	3	com	barb	4	C1	E	3	0	mac
+100	3E4	3	com	barb	4	C1	E	4	0	mdn
+101	3E5	3	com	barb	4	C1	E	5	1	barb
+102	3E6	3	com	barb	4	C1	E	6	0	bif
+103	3F1	3	com	barb	4	C1	F	1	0	bif
+104	3F2	3	com	barb	4	C1	F	2	0	mac
+105	3F3	3	com	barb	4	C1	F	3	0	mac
+106	3F4	3	com	barb	4	C1	F	4	0	mac
+107	3F5	3	com	barb	4	C1	F	5	0	bif
+108	3F6	3	com	barb	4	C1	F	6	0	mdn
+
+mdon	focal 1
+2166	61A6	61	com	mdn	4	F1	A	6	0	mac
+2167	61B1	61	com	mdn	4	F1	B	1	0	mac
+2168	61B2	61	com	mdn	4	F1	B	2	1	mdn
+2169	61B3	61	com	mdn	4	F1	B	3	0	barb
+2170	61B4	61	com	mdn	4	F1	B	4	0	bif
+2171	61B5	61	com	mdn	4	F1	B	5	1	mdn
+2172	61B6	61	com	mdn	4	F1	B	6	0	barb
+2173	61C1	61	com	mdn	4	F1	C	1	0	mac
+2174	61C2	61	com	mdn	4	F1	C	2	0	mac
+2175	61C3	61	com	mdn	4	F1	C	3	0	bif
+2176	61C4	61	com	mdn	4	F1	C	4	0	barb
+2177	61C5	61	com	mdn	4	F1	C	5	0	barb
+2178	61C6	61	com	mdn	4	F1	C	6	0	barb
+2179	61D1	61	com	mdn	4	F1	D	1	0	barb
+2180	61D2	61	com	mdn	4	F1	D	2	0	mac
+2181	61D3	61	com	mdn	4	F1	D	3	0	barb
+2182	61D4	61	com	mdn	4	F1	D	4	0	bif
+2183	61D5	61	com	mdn	4	F1	D	5	0	bif
+2184	61D6	61	com	mdn	4	F1	D	6	0	barb
+2185	61E1	61	com	mdn	4	F1	E	1	0	bif
+2186	61E2	61	com	mdn	4	F1	E	2	1	mdn
+2187	61E3	61	com	mdn	4	F1	E	3	0	barb
+2188	61E4	61	com	mdn	4	F1	E	4	0	bif
+2189	61E5	61	com	mdn	4	F1	E	5	1	mdn
+2190	61E6	61	com	mdn	4	F1	E	6	0	bif
+2191	61F1	61	com	mdn	4	F1	F	1	0	barb
+2192	61F2	61	com	mdn	4	F1	F	2	0	mac
+2193	61F3	61	com	mdn	4	F1	F	3	0	mac
+2194	61F4	61	com	mdn	4	F1	F	4	0	mac
+2195	61F5	61	com	mdn	4	F1	F	5	0	mac
+2196	61F6	61	com	mdn	4	F1	F	6	0	bif
+
+> these nodC seqs were found on plant IDs:
+ (1) Tri.Nbhd.Original_C03_27_19H03A-RT27_AF3101T_mdon_mdon-b_NodC
+2017-07-13 / 2017-07-17 seqs:
+2017-07-13_C04_barb_3B2-4
+2017-07-17_A11_mdn_61E5-5
+2017-07-13_C05_barb_3B2-5
+2017-07-17_A08_mdn_61E5-2
+2017-07-17_A07_mdn_61E5-1
+2017-07-17_A09_mdn_61E5-3
+
+ --> EXACTLY WHERE THEY SHOULD BE AND NOWHERE ELSE :D
+
+ (2) Tri.Nbhd.Original_G03_35_01C04A-RT35_AF3012T_mac_mac-d_NodC
+ --> this one is kind of odd because it is sort of basal. there are quite a few nodules with similar seqs, leading me to suspect that one of the unsequenced inoc strains also has this sequence :( really need these sequences!!
+> nodC_1st_2nd_unique_inoc1_nodCtree.pdf uploaded to google folder; note that this doesn't have the alignment trimmed so can't trust all the clades. does show the RT27 strain and the nodules it colonized.

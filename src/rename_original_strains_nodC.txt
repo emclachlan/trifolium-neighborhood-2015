@@ -62,5 +62,7 @@ s/_69_/_69_19H02A-RT69_AF3100T_mdon_mdon-a_/g
 s/_27_/_27_19H03A-RT27_AF3101T_mdon_mdon-b_/g
 
 try it!
-sed rename_orig.sed tri.nbhd.original.strain.fasta.fa > renamed.original.strain.fasta.fa
+cd ~/Documents/GitHub/trifolium-neighborhood-2015
+sed -f rename_orig.sed < ../data/first\ trimmed\ sanger\ reads/tri.nbhd.original.strain.fasta.fa > ../data/tri.nbhd.strains.renamed.fa
 
+! it works :D
